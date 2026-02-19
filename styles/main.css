@@ -25,7 +25,7 @@ body {
 }
 
 #navbar {
-    background-image: url('/img/navbar/stars_background.png'), linear-gradient(to bottom, var(--violet), var(--blue));
+    background: url('/img/navbar/stars_background.png'), linear-gradient(to bottom, var(--violet), var(--blue));
     height: 300px;
     width: 100%;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 .cloudsBanner {
-    background-image: url('/img/navbar/clouds.png');
+    background: url('/img/navbar/clouds.png');
     height: 100px;
     display: flex;
     flex-wrap: wrap;
