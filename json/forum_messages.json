@@ -1,0 +1,109 @@
+{
+  "general": [
+    { "username": "example", "title": "example", "message": "example", "date": "example", "trigger": "example" },
+    {
+      "username": "grumpycat",
+      "title": "Creepy movie",
+      "message": "Guys, go check what’s screening at the theater rn",
+      "date": "now",
+      "trigger": "cuando aparezca la peli"
+    },
+    {
+      "username": "CozyTownRoyalty",
+      "title": "Attention, Cozylanders!",
+      "message": "We appreciate the loyalty of this wonderful community, but the development team regrets to inform you that we will be discontinuing the project next month. We have been experiencing technical issues beyond our control, and we believe it is best to be transparent with the many of you who not only played as children but have also seen your own children carry on the legacy of your magical avatar. Cozyland’s domain will soon disappear, but the memories we've made will live on forever.",
+      "date": "now",
+      "trigger": "cuando arranca el juego"
+    },
+    {
+      "username": "fairylady_003",
+      "title": "Am I the only person left of what?",
+      "message": "I've been online all morning and haven't seen a single active player to interact with. Has the cozyland empire fallen for good?",
+      "date": "01-22-2026",
+      "trigger": ""
+    },
+    {
+      "username": "cozymom",
+      "title": "Careful. No longer safe for kids!",
+      "message": "So, I don’t know about you, but this is my official goodbye. Today I was showing the game to my six-year-old son, and the screen started flickering. I didn't think much of it, but when he changed the avatar's clothes in the shop, its skin appeared flayed with its organs completely exposed and bloody. If this is a joke... stop. I’m filing a formal report, my son was traumatized.",
+      "date": "11-22-2025",
+      "trigger": ""
+    },
+    {
+      "username": "loverboy_98",
+      "title": "Anniversary - Our Cozy Love Story",
+      "message": "I don’t usually talk about my personal life here, but it was heartbreaking to wake up today and find out all my DMs were deleted. Out of the blue, for no reason. I met my wife, Tylor, four years ago. Her avatar was a gardener ogre, so I assumed she was a dude, and she never corrected me because she thought it was fun xd Our casual talks about spells slowly turned into love. Imagine my surprise when we saw each other in person for the first time. She’s expecting now! I wish I had known in advance they’d randomly delete old messages. I would’ve loved to save ours.",
+      "date": "05-02-2025"
+    },
+    {
+      "username": "abby_turtle_moan",
+      "title": "R the rumours true?",
+      "message": "This is the third time I’m posting this. My messages keep getting deleted for some reason. Have you heard the conspiracy theories about the hacker? They’re all over social media. Will this affect our EXP? Just great, twelve years gone to waste. ",
+      "date": "02-18-2025"
+    },
+    {
+      "username": "cherise_dnd",
+      "title": "MeetUp 2024",
+      "message": "Happy Halloween, cozynerds!! Due to weather conditions, we had to postpone the get-together until next week. Same place, same time. Those on the private channel and social media should have already heard the news. Even so, PLEASEEE don’t forget to bring a costume and some snacks to share. See ya!!",
+      "date": "10-30-2024"
+    }
+  ],
+  "pets": [
+    {
+      "username": "superjr_fan",
+      "title": "WTF???",
+      "message": "What’s going on with this game? It used to be all unicorns and rainbows, but suddenly some really bizarre items started appearing. A few days ago, my pet died in the game, and its leg appeared in the refrigerator with the option to eat it. Sick, bro",
+      "date": "04-19-2025"
+    },
+    {
+      "username": "cherrypoptart",
+      "title": "Glitch, plz fix!!",
+      "message": "My fave pet’s been in the vet for AGES. Lit a whole week and nothing. You guys know what happened? Was it the last maintenance period?? Halp.",
+      "date": "17-07-2024"
+    },
+    {
+      "username": "believeratheart",
+      "title": "Send ur reccs",
+      "message": "Finally got the coins to go for either a coconut dragon or a cinnamon jellyfish. What’d you guys think?",
+      "date": "21-03-2024"
+    },
+    {
+      "username": "flatearth_900",
+      "title": "Dog person or a cat person?",
+      "message": "I feel like I’m a black cat and my boyfriend’s more of a goofy golden retriever. I’m def doing a buzzfill quiz",
+      "date": "09-12-2023"
+    },
+    {
+      "username": "jo_star",
+      "title": "A penny for a pony?",
+      "message": "Hii, y’all! It’s me, Jo. You know the deal-o. It’s gonna be my bday soon aaaand… my bday wish is to have the limited-edition rainbow pony. If each of you donate just one coin, we can beat last year’s mark. Pretty, pretty, please!!!",
+      "date": "06-02-2022"
+    }
+  ],
+  "fashion": [
+    {
+      "username": "archbrenn0228",
+      "title": "Xmas spirit crashed",
+      "message": "What do you mean we don’t get Xmas clothes this year?",
+      "date": "12-27-2025"
+    },
+    {
+      "username": "grumpycat",
+      "title": "Bring the limited edition backkkk",
+      "message": "R.I.P best outfits the game ever had. I know they warned us about premium options being gone soon, but I thought they meant they’d be free?! Where did the fluffy dress go? Or the one with the roses? Are we all supposed to wear flat T-shirts now?",
+      "date": "06-08-2025"
+    },
+    {
+      "username": "vampire_bch",
+      "title": "Follow me on social media!",
+      "message": "I’m posting videos on myspace of cozy outfits I’m recreating in real life. I’m selling a bunch at the cozy meetup 2024. Pre order at vamp_bch_io",
+      "date": "09-30-2024"
+    },
+    {
+      "username": "CozyTownRoyalty",
+      "title": "Miss Cozy Universe",
+      "message": "Attention, players, it’s your last chance to vote for your favorite queens. As you may already know, this year we’re giving away 10000 EXP and 150.000 coins to the winner. The election closes at midnight. Good luck!",
+      "date": "02-14-2023"
+    }
+  ]
+}
