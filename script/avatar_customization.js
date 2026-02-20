@@ -13,7 +13,10 @@ skincolor = localStorage.getItem("skincolor");
 function loadAvatar(){
     if (skincolor != null){
         changeBody(skincolor);
-    } 
+    }  else {
+            bodyAvatar.src = `img/character/body/body_fair.png`;
+            headAvatar.src = `img/character/head/head_fair.png`;
+    }
 }
 
 function changeBody(color) {
