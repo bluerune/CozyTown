@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CozyTown</title>
-    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
@@ -13,9 +13,30 @@
 
     <div id="mainCointainer">
         <h1>Closet</h1>
-        
+
+        <div id="dressupContainer">
+            <img id="bodyAvatar"></img>
+            <img id="headAvatar"></img>
+            <img id="mouthAvatar"></img>
+            <img id="noseAvatar"></img>
+            <img id="eyesAvatar"></img>
+        </div>
+        <div id="skincolorcontainer">
+            <input class="skincolorButton white" type="button" id="nextBody" onclick="changeBody('white')">
+            <input class="skincolorButton fair" type="button" id="nextBody" onclick="changeBody('fair')">
+            <input class="skincolorButton dark" type="button" id="nextBody" onclick="changeBody('dark')">
+            <input class="skincolorButton green" type="button" id="nextBody" onclick="changeBody('green')">
+            <input class="skincolorButton blue" type="button" id="nextBody" onclick="changeBody('blue')">
+        </div>
+
+        <input type="button" value="NEXT mouth" id="nextMouth" onclick="changeMouth()">
+        <input type="button" value="NEXT nose" id="nextNose" onclick="changeNose()">
+        <input type="button" value="NEXTeyes" id="nextEyes" onclick="changeEyes()">
+
+
     </div>
     <script src="script/navbar.js"></script>
+    <script src="script/avatar_customization.js"></script>
 </body>
 
 </html>

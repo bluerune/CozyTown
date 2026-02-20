@@ -100,3 +100,49 @@ body {
     color: var(--grey);
     font-size: 12px;
 }
+
+
+#dressupContainer {
+    height: 320px;
+    width: 320px;
+    background-color: aqua;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#dressupContainer img {
+    position: absolute;
+    left: 0;
+    height: 320px;
+    width: 320px;
+}
+
+.skincolorButton {
+    border: 5px solid black;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.white {
+    background-color: white;
+}
+
+.fair {
+    background-color: rgb(243, 185, 157);
+}
+
+.dark {
+    background-color: rgb(73, 34, 8);
+}
+
+.green {
+    background-color: rgb(43, 73, 8);
+}
+
+.green {
+    background-color: rgb(18, 71, 151);
+}
+
+
