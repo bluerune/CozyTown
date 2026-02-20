@@ -13,8 +13,8 @@ function loadAvatar(){
 }
 
 function changeBody(color) {
-    bodyAvatar.src = `/img/character/body/body_${color}.png`;
-    headAvatar.src = `/img/character/head/head_${color}.png`;
+    bodyAvatar.src = `img/character/body/body_${color}.png`;
+    headAvatar.src = `img/character/head/head_${color}.png`;
 
     //guardar en local storage color
 }
@@ -22,6 +22,6 @@ function changeBody(color) {
 function changeMouth() {
     maxMouths = 1;
     //ir cambiando variables con imagenes maximas porque no hay manera facil de ver cuantos archivos hay en la carpeta
-    
-    mouthAvatar.src = `/img/character/mouth/mouth_1.png`;
+
+    mouthAvatar.src = `img/character/mouth/mouth_1.png`;
 }
