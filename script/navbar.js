@@ -1,7 +1,7 @@
 navbar = document.getElementById("navbar");
 
 navbar.innerHTML += `
-        <a href="index.html"><img src="img/navbar/logo1.png" class="cozytownLogoNavbar" alt="CozyTown.com"></a>
+        <a href="index.html"><img src="img/navbar/LOGO2.png" class="cozytownLogoNavbar" alt="CozyTown.com"></a>
         <div class="cloudsBanner"> 
             <a href="closet.html"><div class="profilepictureNavbar" alt=""></div></a>
             <p>Welcome, <a href="user-profile.html">username</a>!</p>
