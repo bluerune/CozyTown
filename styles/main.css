@@ -144,3 +144,23 @@ body {
 .blue {
     background-color: rgb(18, 71, 151);
 }
+
+
+@media (max-width: 600px) {
+.cozytownLogoNavbar {
+    width: 200px;
+    margin-left: 15%;
+}
+.iconsNavbar {
+    width: 16px;
+    height: 16px;
+    margin-left: 1em;
+    margin-right: 0.2em;
+}
+
+.profilepictureNavbar {
+    width: 32px;
+    height: 32px;
+}
+
+}
