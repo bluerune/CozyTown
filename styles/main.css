@@ -32,27 +32,32 @@ body {
 
 #mainCointainer {
     text-align: center;
-    background-color: aliceblue;
+    background-color: white;
     width: 800px;
+    min-height: 400px;
+    margin-top: 3em;
     padding: 2em;
 }
 
 .profilepicture {
     width: 64px;
     height: 64px;
-    background-color: black;
+    background-color: white;
+    border: 5px solid black;
 }
 
 .profilepictureuserpage {
     width: 240px;
     height: 240px;
-    background-color: black;
+    background-color: white;
+    border: 5px solid black;
 }
 
 .profilepictureNavbar {
     width: 64px;
     height: 64px;
-    background-color: black;
+    background-color: white;
+    border: 5px solid black;
     margin-right: 0.2em;
 }
 
@@ -65,11 +70,11 @@ body {
 }
 
 .cozytownLogoNavbar {
-    width: 400px;
+    height: 150px;
     display: flex;
-    margin-left: 25%;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-left: 20%;
+    margin-top: 3em;
+    margin-bottom: 2em;
 
 }
 
@@ -105,15 +110,20 @@ body {
 #dressupContainer {
     height: 320px;
     width: 320px;
-    background-color: aqua;
+    background-color: white;
+    border: 0px;
     position: relative;
-    margin: 0;
-    padding: 0;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
 }
 
 #dressupContainer img {
     position: absolute;
-    left: 0;
+    left: 0%;
+    border: 0px;
+    outline: 0;
+    border: none;
     height: 320px;
     width: 320px;
 }
@@ -133,34 +143,75 @@ body {
     background-color: rgb(243, 185, 157);
 }
 
+.tan {
+    background-color: rgb(187, 103, 61);
+}
+
 .dark {
     background-color: rgb(73, 34, 8);
 }
 
 .green {
-    background-color: rgb(43, 73, 8);
+    background-color: rgb(85, 138, 24);
 }
 
 .blue {
-    background-color: rgb(18, 71, 151);
+    background-color: rgb(19, 90, 196);
 }
 
+
+.clothesButtonPreview {
+    width: 64px;
+    height: 64px;
+    border: 5px solid black;
+}
+
+.hairButtonPreview {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    display: inline-block;
+    border: 5px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hairButtonPreview img {
+    width: 64px;
+    left: 0;
+    position: absolute;
+}
 
 @media (max-width: 600px) {
-.cozytownLogoNavbar {
-    width: 200px;
-    margin-left: 15%;
-}
-.iconsNavbar {
-    width: 16px;
-    height: 16px;
-    margin-left: 1em;
-    margin-right: 0.2em;
+    .cozytownLogoNavbar {
+        height: 80px;
+        margin-left: 15%;
+    }
+
+    .iconsNavbar {
+        width: 16px;
+        height: 16px;
+        margin-left: 1em;
+        margin-right: 0.2em;
+    }
+
+    .profilepictureNavbar {
+        width: 32px;
+        height: 32px;
+    }
+
+    #navbar {
+        height: 200px;
+    }
+
+    .welcomeNavbar {
+        display: none;
+    }
+
 }
 
-.profilepictureNavbar {
-    width: 32px;
-    height: 32px;
-}
-
+@media (max-width: 800px) {
+    #mainCointainer {
+        width: 100%;
+    }
 }

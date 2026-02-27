@@ -16,24 +16,48 @@
         <h1>Closet</h1>
 
         <div id="dressupContainer">
+            <img id="hairBackAvatar"></img>
             <img id="bodyAvatar"></img>
             <img id="headAvatar"></img>
             <img id="mouthAvatar"></img>
             <img id="noseAvatar"></img>
             <img id="eyesAvatar"></img>
+            <img id="bottomAvatar"></img>
+            <img id="shoesAvatar"></img>
+            <img id="topAvatar"></img>
+            <img id="hairFrontAvatar"></img>
+            <img id="hatAvatar"></img>
         </div>
         <div id="skincolorcontainer">
-            <input class="skincolorButton white" type="button" id="nextBody" onclick="changeBody('white')">
-            <input class="skincolorButton fair" type="button" id="nextBody" onclick="changeBody('fair')">
-            <input class="skincolorButton dark" type="button" id="nextBody" onclick="changeBody('dark')">
-            <input class="skincolorButton green" type="button" id="nextBody" onclick="changeBody('green')">
-            <input class="skincolorButton blue" type="button" id="nextBody" onclick="changeBody('blue')">
+            <h1>Skin color</h1>
+            <input class="skincolorButton white" type="button" onclick="changeBody('white')">
+            <input class="skincolorButton fair" type="button" onclick="changeBody('fair')">
+            <input class="skincolorButton tan" type="button" onclick="changeBody('tan')">
+            <input class="skincolorButton dark" type="button" onclick="changeBody('dark')">
+            <input class="skincolorButton green" type="button" onclick="changeBody('green')">
+            <input class="skincolorButton blue" type="button" onclick="changeBody('blue')">
         </div>
 
-        <input type="button" value="NEXT mouth" id="nextMouth" onclick="changeMouth()">
-        <input type="button" value="NEXT nose" id="nextNose" onclick="changeNose()">
-        <input type="button" value="NEXTeyes" id="nextEyes" onclick="changeEyes()">
+        <div id="tabsFaceButtonsContainer">
+            <h1>Features</h1>
+            <input class="tabFeaturesAvatar" type="button" value="Eyes" onclick="tabsFeatures('eyes')">
+            <input class="tabFeaturesAvatar" type="button" value="Mouth" onclick="tabsFeatures('mouth')">
+            <input class="tabFeaturesAvatar" type="button" value="Nose" onclick="tabsFeatures('nose')">
+            <input class="tabFeaturesAvatar" type="button" value="Hair" onclick="tabsFeatures('hair')">
+        </div>
+        <div id="featuresContainer"></div>
 
+
+        <div id="tabsClothesButtonsContainer">
+            <h1>Clothes</h1>
+            <input class="tabClothesAvatar" type="button" value="Tops" onclick="tabsClothes('tops')">
+            <input class="tabClothesAvatar" type="button" value="Bottoms" onclick="tabsClothes('bottoms')">
+            <input class="tabClothesAvatar" type="button" value="Shoes" onclick="tabsClothes('shoes')">
+            <input class="tabClothesAvatar" type="button" value="Hats" onclick="tabsClothes('hats')">
+        </div>
+
+
+        <div id="clothesContainer"></div>
 
     </div>
     <script src="script/navbar.js"></script>

@@ -1,10 +1,10 @@
 navbar = document.getElementById("navbar");
 
-navbar.innerHTML += `
-        <a href="index.html"><img src="img/navbar/LOGO2.png" class="cozytownLogoNavbar" alt="CozyTown.com"></a>
+navbar.innerHTML = `
+        <a href="index.html"><img src="img/navbar/cozytowndotcom_logo.png" class="cozytownLogoNavbar" alt="CozyTown.com"></a>
         <div class="cloudsBanner"> 
             <a href="closet.html"><div class="profilepictureNavbar" alt=""></div></a>
-            <p>Welcome, <a href="user-profile.html">username</a>!</p>
+            <p class="welcomeNavbar">Welcome, <a href="user-profile.html">username</a>!</p>
             <img class="iconsNavbar" src="img/navbar/star.png" alt=""> <a href="world-map.html">
                 Explore</a>
             <img class="iconsNavbar" src="img/navbar/star.png" alt=""> <a href="forums.html">
