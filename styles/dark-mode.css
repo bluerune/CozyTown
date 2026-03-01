@@ -14,7 +14,8 @@
 body {
     background-color: var(--darkerviolet);
 }
-a{
+
+a {
     color: var(--yellow);
     font-style: none;
 }
@@ -25,7 +26,7 @@ a{
 }
 
 .cloudsBanner {
-        background-image: url('../img/navbar/clouds_dark.png');
+    background-image: url('../img/navbar/clouds_dark.png');
 }
 
 #mainCointainer {
@@ -35,5 +36,5 @@ a{
 
 footer {
     color: var(--white);
-    background: url('../img/navbar/stars_background.png'), linear-gradient(to bottom,  var(--darkerviolet), black);
+    background: url('../img/navbar/stars_background.png'), linear-gradient(to bottom, var(--darkerviolet), black);
 }

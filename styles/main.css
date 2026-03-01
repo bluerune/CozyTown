@@ -5,6 +5,7 @@
     --blue: rgb(77, 205, 255);
     --violet: rgb(97, 13, 175);
     --yellow: rgb(255, 200, 33);
+    --lightyellow: rgb(255, 216, 131);
     --green: rgb(119, 216, 29);
 
 }
@@ -12,7 +13,6 @@
 body {
     height: 100%;
     width: 100%;
-
     text-align: center;
     margin: 0;
     padding: 0;
@@ -30,7 +30,31 @@ a {
 }
 
 a:hover {
-  text-decoration: underline wavy var(--yellow) 1px;
+    text-decoration: underline wavy var(--yellow) 1px;
+}
+
+button,
+input[type=button] {
+border: 2px solid black;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: var(--yellow);
+    color: black;
+    padding: 0.5em;
+    box-shadow:3px 3px black;
+    cursor: pointer;
+}
+
+button:hover,
+input[type=button]:hover {
+    background-color: var(--lightyellow);
+
+}
+
+button:active,
+input[type=button]:active {
+    background-color: var(--blue);
+
 }
 
 #navbar {
@@ -48,7 +72,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+
     font-size: 9px;
 }
 
@@ -156,34 +180,35 @@ footer {
 }
 
 .skincolorButton {
-    border: 5px solid black;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
+    border: 5px solid black !important;
+    height: 32px !important;
+    width: 32px !important;
+    border-radius: 50% !important;
 }
 
+
 .white {
-    background-color: white;
+    background-color: white  !important;
 }
 
 .fair {
-    background-color: rgb(243, 185, 157);
+    background-color: rgb(243, 185, 157) !important;
 }
 
 .tan {
-    background-color: rgb(187, 103, 61);
+    background-color: rgb(187, 103, 61) !important;
 }
 
 .dark {
-    background-color: rgb(73, 34, 8);
+    background-color: rgb(73, 34, 8) !important;
 }
 
 .green {
-    background-color: rgb(85, 138, 24);
+    background-color: rgb(85, 138, 24) !important;
 }
 
 .blue {
-    background-color: rgb(19, 90, 196);
+    background-color: rgb(19, 90, 196) !important;
 }
 
 
@@ -202,7 +227,7 @@ footer {
     border: 5px solid black;
     margin: 0px;
     padding: 0px;
-        background-color: white;
+    background-color: white;
 }
 
 .hairButtonPreview img {

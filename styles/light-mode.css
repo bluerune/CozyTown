@@ -19,7 +19,7 @@ body {
 }
 
 .cloudsBanner {
-        background: url('../img/navbar/clouds.png');
+    background: url('../img/navbar/clouds.png');
 }
 
 #mainCointainer {
@@ -28,6 +28,6 @@ body {
 }
 
 footer {
-        color: var(--darker);
+    color: var(--darker);
     background: url('../img/navbar/hills.png'), linear-gradient(to bottom, var(--blue), var(--yellow));
 }
