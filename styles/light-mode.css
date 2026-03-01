@@ -30,5 +30,4 @@ body {
 footer {
         color: var(--darker);
     background: url('../img/navbar/hills.png'), linear-gradient(to bottom, var(--blue), var(--yellow));
-    bacl
 }
