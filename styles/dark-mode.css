@@ -1,0 +1,39 @@
+:root {
+    --darker: rgb(20, 20, 20);
+    --grey: rgb(122, 122, 122);
+    --white: rgb(233, 233, 233);
+    --blue: rgb(77, 205, 255);
+    --darkerblue: rgb(2, 3, 58);
+    --violet: rgb(97, 13, 175);
+    --darkerviolet: rgb(30, 8, 82);
+    --yellow: rgb(255, 200, 33);
+    --green: rgb(119, 216, 29);
+
+}
+
+body {
+    background-color: var(--darkerviolet);
+}
+a{
+    color: var(--yellow);
+    font-style: none;
+}
+
+#navbar {
+    background: url('../img/navbar/stars_background.png'), linear-gradient(to bottom, var(--violet), var(--darkerviolet));
+    color: var(--white);
+}
+
+.cloudsBanner {
+        background-image: url('../img/navbar/clouds_dark.png');
+}
+
+#mainCointainer {
+    background-color: var(--darker);
+    color: var(--white);
+}
+
+footer {
+    color: var(--white);
+    background: url('../img/navbar/stars_background.png'), linear-gradient(to bottom,  var(--darkerviolet), black);
+}

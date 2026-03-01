@@ -5,13 +5,14 @@
     --blue: rgb(77, 205, 255);
     --violet: rgb(97, 13, 175);
     --yellow: rgb(255, 200, 33);
+    --green: rgb(119, 216, 29);
 
 }
 
 body {
     height: 100%;
     width: 100%;
-    background-color: var(--blue);
+
     text-align: center;
     margin: 0;
     padding: 0;
@@ -24,19 +25,45 @@ body {
     font-size: 14px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline wavy var(--yellow) 1px;
+}
+
 #navbar {
-    background: url('../img/navbar/stars_background.png'), linear-gradient(to bottom, var(--violet), var(--blue));
+
     height: 300px;
     width: 100%;
 }
 
+footer {
+    height: 200px;
+    width: 100%;
+    bottom: 0%;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 9px;
+}
+
+.cozytownLogoFooter {
+    height: 50px;
+    margin: 0.3em;
+}
+
 #mainCointainer {
     text-align: center;
-    background-color: white;
     width: 800px;
     min-height: 400px;
     margin-top: 3em;
     padding: 2em;
+    display: inline-block;
 }
 
 .profilepicture {
@@ -86,7 +113,7 @@ body {
 }
 
 .cloudsBanner {
-    background: url('../img/navbar/clouds.png');
+
     height: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +137,7 @@ body {
 #dressupContainer {
     height: 320px;
     width: 320px;
-    background-color: white;
+
     border: 0px;
     position: relative;
     display: inline-block;
@@ -164,6 +191,7 @@ body {
     width: 64px;
     height: 64px;
     border: 5px solid black;
+    background-color: white;
 }
 
 .hairButtonPreview {
@@ -174,6 +202,7 @@ body {
     border: 5px solid black;
     margin: 0px;
     padding: 0px;
+        background-color: white;
 }
 
 .hairButtonPreview img {

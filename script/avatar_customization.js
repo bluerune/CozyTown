@@ -62,7 +62,7 @@ function loadAvatar() {
     }
 
     if (nose != null) {
-        changeNose(hat);
+        changeNose(nose);
     } else {
         noseAvatar.src = `img/character/noses/nose_1.png`;
     }
@@ -98,6 +98,7 @@ function changeBody(color) {
 }
 
 function tabsFeatures(tabName) {
+    clearAllTabs()
     switch (tabName) {
         case "eyes":
             maxEyes = 4;
@@ -149,7 +150,6 @@ function changeEyes(number) {
 
 
 function tabsClothes(tabName) {
-
     clearAllTabs()
     switch (tabName) {
         case "tops":
