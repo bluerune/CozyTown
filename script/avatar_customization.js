@@ -10,12 +10,10 @@ hatAvatar = document.getElementById("hatAvatar");
 hairFrontAvatar = document.getElementById("hairFrontAvatar");
 hairBackAvatar = document.getElementById("hairBackAvatar");
 
-
 clothesContainer = document.getElementById("clothesContainer");
 featuresContainer = document.getElementById("featuresContainer");
 
 function loadAvatar() {
-
     skincolor = localStorage.getItem("skincolor");
     topStorage = localStorage.getItem("topStorage");
     bottom = localStorage.getItem("bottom");
@@ -26,9 +24,6 @@ function loadAvatar() {
     eyes = localStorage.getItem("eyes");
     hairBack = localStorage.getItem("hairBack");
     hairFront = localStorage.getItem("hairFront");
-
-    console.log(topStorage);
-    console.log(bottom);
 
     if (skincolor != null) {
         changeBody(skincolor);
@@ -79,15 +74,11 @@ function loadAvatar() {
         eyesAvatar.src = `img/character/eyes/eyes_1.png`;
     }
 
-    if (hairBack != null) {
-        changeHair(hairBack);
-    } else {
+    if (hairBack == null) {
         hairBackAvatar.src = `img/character/hair/back/hair_back_1.png`;
-    }
-    if (hairFront != null) {
-        changeHair(hairFront);
-    } else {
         hairFrontAvatar.src = `img/character/hair/front/hair_front_1.png`;
+    } else {
+        changeHair(hairBack);
     }
 }
 
@@ -97,7 +88,7 @@ function changeBody(color) {
     localStorage.setItem("skincolor", color);
 }
 
-function tabsFeatures(tabName) {
+function toggleTabsCloset(tabName) {
     clearAllTabs()
     switch (tabName) {
         case "eyes":
@@ -128,30 +119,6 @@ function tabsFeatures(tabName) {
             for (let i = 1; i <= maxHair; i++) {
                 featuresContainer.innerHTML += `<div class="hairButtonPreview" onclick="changeHair('${i}')"><img src="img/character/hair/back/hair_back_${i}.png"><img src="img/character/hair/front/hair_front_${i}.png"></div>`;
             }
-            break;
-    }
-}
-
-function changeMouth(number) {
-    mouthAvatar.src = `img/character/mouth/mouth_${number}.png`;
-    localStorage.setItem("mouth", number);
-}
-
-function changeNose(number) {
-    noseAvatar.src = `img/character/noses/nose_${number}.png`;
-    localStorage.setItem("nose", number);
-}
-
-function changeEyes(number) {
-    eyesAvatar.src = `img/character/eyes/eyes_${number}.png`;
-    localStorage.setItem("eyes", number);
-}
-
-
-
-function tabsClothes(tabName) {
-    clearAllTabs()
-    switch (tabName) {
         case "tops":
             maxTops = 2;
             clothesContainer.innerHTML = ``
@@ -182,11 +149,23 @@ function tabsClothes(tabName) {
                 clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="img/character/clothes/hats/hat_${i}.png" onclick="changeHat('${i}')">`;
             }
             break;
-        default:
-            console.log("Error: tab no existe");
+            break;
     }
+}
 
+function changeMouth(number) {
+    mouthAvatar.src = `img/character/mouth/mouth_${number}.png`;
+    localStorage.setItem("mouth", number);
+}
 
+function changeNose(number) {
+    noseAvatar.src = `img/character/noses/nose_${number}.png`;
+    localStorage.setItem("nose", number);
+}
+
+function changeEyes(number) {
+    eyesAvatar.src = `img/character/eyes/eyes_${number}.png`;
+    localStorage.setItem("eyes", number);
 }
 
 function changeTop(number) {
@@ -211,11 +190,16 @@ function changeHat(number) {
 }
 
 function changeHair(number) {
-    hairBackAvatar.src = `img/character/hair/back/hair_back_${number}.png`;
-    hairFrontAvatar.src = `img/character/hair/front/hair_front_${number}.png`;
+    if (number == "0") {
+        changeClear("hair");
+    } else {
+        hairBackAvatar.src = `img/character/hair/back/hair_back_${number}.png`;
+        hairFrontAvatar.src = `img/character/hair/front/hair_front_${number}.png`;
 
-    localStorage.setItem("hairBack", number);
-    localStorage.setItem("hairFront", number);
+        localStorage.setItem("hairBack", number);
+        localStorage.setItem("hairFront", number);
+    }
+
 }
 
 function changeClear(name) {
@@ -223,8 +207,8 @@ function changeClear(name) {
         case "hair":
             hairBackAvatar.src = "img/empty.png";
             hairFrontAvatar.src = "img/empty.png";
-            localStorage.removeItem("hairBack");
-            localStorage.removeItem("hairFront");
+            localStorage.setItem("hairBack", "0");
+            localStorage.setItem("hairFront", "0");
             break;
         case "hat":
             hatAvatar.src = "img/empty.png";
