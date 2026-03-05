@@ -5,8 +5,7 @@ function showMessagesForum(dataArray) {
   for (const item of dataArray) {
     container.innerHTML += `
     <div class="forummessageContainer">
-        <img src="" class="profilepicture" alt="">
-        <div class="linkUsername" onclick="directUserProfile(${item.username})">${item.username}</div>:<p>
+        <div class="linkUsername" onclick="directUserProfile(${item.username})">${item.username}:</div><p>
             "${item.title}"</p>
         <p class="userMessage">${item.message}</p>
         <p class="dateMessage"> ${item.date}</p>
