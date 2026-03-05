@@ -1,4 +1,4 @@
-const url = "../json/forum_messages.json";
+const url = "json/forum_messages.json";
 const container = document.getElementById("forumMessagesContainer");
 
 function showMessagesForum(dataArray) {
