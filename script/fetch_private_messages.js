@@ -1,41 +1,26 @@
-const url = "json/private_messages.json";
-const container = document.getElementById("container");
+const url = "../json/private_messages.json";
+const container = document.getElementById("privateMessagesContainer");
 
-//show conversations
-//show messages
+function showConversations() {
+  container.innerHTML = ``
+}
 
-function showMessages(dataArray) {
-  for (const item of dataArray) {
-    container.innerHTML += `
-    <div class="forummessageContainer">
-    <img src="" class="profilepicture" alt="">
-    <p> ${item.username}: ${item.message} </p>
+function showPrivateMessages(sender) {
+  container.innerHTML = ``
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      for (const item of data[sender]) {
+        container.innerHTML += `<div class="forumMessageContainer">
+        <div class="linkUsername" onclick="directUserProfile(${item.from})">${item.from}:</div>
+        <p class="userMessage">${item.message}</p>
+        <p class="dateMessage">${item.date}</p>
     </div>`;
-  }
+      }
+      
+    })
+    .catch(error => {
+      console.error("error fetch", error);
+    })
+  container.innerHTML += `<a href="../cozymail.html">Back to messages</a>`
 }
-
-function getForumName(name) {
-  forumName = name;
-  console.log(forumName);
-}
-
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    switch (forumName) {
-      case "general":
-        showMessages(data.general);
-        break;
-      case "pets":
-        showMessages(data.pets);
-        break;
-      case "fashion":
-        showMessages(data.fashion);
-        break;
-      default:
-        console.log("Error: Foro no existente");
-    }
-  })
-  .catch(error => {
-    console.error("Error fetch", error);
-  });
