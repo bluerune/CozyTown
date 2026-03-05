@@ -1,4 +1,4 @@
-const url = "../json/private_messages.json";
+const url = "json/private_messages.json";
 const container = document.getElementById("privateMessagesContainer");
 
 function showConversations() {
