@@ -22,5 +22,5 @@ function showPrivateMessages(sender) {
     .catch(error => {
       console.error("error fetch", error);
     })
-  container.innerHTML += `<a href="../cozymail.html">Back to messages</a>`
+  container.innerHTML += `<a href="cozymail.html">Back to messages</a>`
 }
