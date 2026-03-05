@@ -1,13 +1,147 @@
 {
-    "Hacker": [
-        {"from": "Hacker", "message": "Hello, give me your data"},
-        {"from": "Me", "message": "No"},
-        {"from": "Hacker", "message": "Please?"}
+    "list": [
+        "cherise_dnd","fairylady_003","cherrypoptart","dylanator", "sing_the_blues", "carly_mcr", "jo_star"
     ],
-
-    "Friend": [
-        {"from": "Me", "message": "Happy birthday!"},
-        {"from": "Me", "message": "Thank you!"},
-        {"from": "Me", "message": "Happy birthday!"}
+    "cherise_dnd": [
+        {
+            "from": "cherise_dnd",
+            "message": "Missed you at the comic con last week. We’re planning a meetup at the zombie walk, if you’re feeling better. No pressure but it’ll be good for you to get out of the house I think.",
+            "date": "08-13-2024"
+        },
+        {
+            "from": "cherise_dnd",
+            "message": "Hey. How have you been? I’m here if you wanna talk.",
+            "date": "07-30-2023"
+        },
+        {
+            "from": "cherise_dnd",
+            "message": "I don’t know what to say. It doesn’t feel real. A few days ago I was donating coins for Jo to get her stupid fluffy dress. I had no idea she’d never see it. I won’t tell the others if you don’t want me to. But we’re here for you. We may not know you in person, but a part of Jo will live in each of us forever.",
+            "date": "06-22-2023"
+        },
+        {
+            "from": "Me",
+            "message": "Sorry. I know I should’ve told you right away, but for a long time I couldn’t talk about it. Jo is gone, Cherise. We were at a party. She wasn’t feeling good. I don’t know if it was on purpose, and it doesn’t really matter. Life hasn’t been the same without her. And I couldn’t go back to the game like nothing happened. But I can’t let go either. This was a big part of our friendship, so… Here I am, trying to move on. Failing miserably.",
+            "date": "06-06-2023"
+        },
+        {
+            "from": "cherise_dnd",
+            "message": "So, no pressure at all but Cherry has been text-bombing me since her bday about you two. Is everything ok?.",
+            "date": "03-25-2022"
+        },
+        {
+            "from": "cherise_dnd",
+            "message": "Hey stranger. Is it just me or the game is taking away my EXP? It’s like every time I connect, every one or two months, I’m way behind.",
+            "date": "11-03-2021"
+        }
+    ],
+    "fairylady_003": [
+        {
+            "from": "fairylady_003",
+            "message": "Awwwe. Are the lizards limited edition? Reach out if you wanna trade.",
+            "date": "11-11-2023"
+        }
+    ],
+    "cherrypoptart": [
+        {
+            "from": "cherrypoptart",
+            "message": "Wow. That's dark. Even for you. You don’t joke about that. I’m sorry guys but I’ll have to block you?",
+            "date": "now"
+        },
+        {
+            "from": "Me",
+            "message": "Cherry, it’s totally my fault for not telling you before, but Jo is dead. Idk what’s going on but it can’t be her",
+            "date": "now"
+        },
+        {
+            "from": "cherrypoptart",
+            "message": "You guys don’t wanna talk to me ever again? Fine. But wtf?? Jo just DM me the most insulting message for NO REASON. What did I do to you two?",
+            "date": "now",
+            "trigger": "después de dar click al perfil de Jo"
+        },
+        {
+            "from": "cherrypoptart",
+            "message": "Hey. Are you ghosting me?? It was my bday last week. So you’d better be dead bro I won’t accept any other excuse.",
+            "date": "04-10-2022"
+        },
+        {
+            "from": "cherrypoptart",
+            "message": "You missed St. Patrick’s?? Dude, I don’t care if you two are in your finals, it’s lit the best event of the game!! Shame, shame, shame.",
+            "date": "03-20-2022"
+        },
+        {
+            "from": "Me",
+            "message": "Hey!! It’s the final round of the Valentine’s special and Jo is three votes away from becoming Miss Fairytale. Here’s the link. Vote, vote, vote.",
+            "date": "02-13-2022"
+        }
+    ],
+    "dylanator": [
+        {
+            "from": "dylanator",
+            "message": "Hey bb. You single?",
+            "date": "12-28-2021"
+        }
+    ],
+    "sing_the_blues": [
+        {
+            "from": "Me",
+            "message": "Betty Boobs?! Oh. My. God! Of course I remember. Jo won’t believe it when I tell her you reached out. How have you been?? It’s been, what? Ten years? We were so silly!!",
+            "date": "12-09-2021"
+        },
+        {
+            "from": "sing_the_blues",
+            "message": "Hey! Do you guys know each other outside the game? Were you neighbors or sg? I went to school with Jo, and I’m pretty sure I met you back then as well. I’m Betty. I have a vague memory of the three of us learning a JBros choreography at the park haha",
+            "date": "12-05-2021"
+        }
+    ],
+    "carly_mcr": [
+        {
+            "from": "Me",
+            "message": "Hey! Could you vote for my friend jo_star for Miss Cozy Universe. We would really appreciate it xoxo",
+            "date": "02-13-2022"
+        },
+        {
+            "from": "carly_mcr",
+            "message": "Thx for the donation!!",
+            "date": "11-25-2020"
+        }
+    ],
+    "jo_star": [
+        {
+            "from": "joe_star",
+            "message": "No! Don’t you see the green dot on my profile? DUH. I’m onlineee",
+            "date": "now"
+        },
+        {
+            "from": "Me",
+            "message": "Jo? But… this is impossible. Is this an automatic message or-",
+            "trigger": "cuando el jugador da click a la notificación de mensaje nuevo",
+            "date": "now"
+        },
+        {
+            "from": "jo_star",
+            "message": "Shit, huh? Some time ago, they would’ve banned you for that message. Good thing they’re more chill now they’re going down.",
+            "date": "06-06-2026",
+            "trigger": "cuando ve a la réplica de la amiga en el juego le aparece una nueva notificación"
+        },
+        {
+            "from": "Me",
+            "message": "Happy bday, girl. They say it gets better with time. Spoiler alert: they’re full of sh*t",
+            "date": "06-06-2026"
+        },
+        {
+            "from": "Me",
+            "message": "You thought I’d forget, huh? Traditions are traditions. HB!",
+            "date": "06-06-2025"
+        },
+        {
+            "from": "Me",
+            "message": "Happy birthday, Jo. We miss you.",
+            "date": "06-06-2024"
+        },
+        {
+            "from": "Me",
+            "message": "It’s been a whole year, but it feels like it was yesterday. You’ll probably never read this, but this was your favorite game. Everytime I play, it brings me back to when your mom visited mine and you were forced to hang out with the game nerd. I wished I had told you that I loved you more often. I wish I could hug you one more time. I still hear your laugh when I close my eyes. I don’t know what I’ll do if it slowly fades away from my memory",
+            "date": "06-06-2023"
+        }
     ]
 }

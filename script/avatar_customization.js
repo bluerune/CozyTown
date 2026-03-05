@@ -28,63 +28,63 @@ function loadAvatar() {
     if (skincolor != null) {
         changeBody(skincolor);
     } else {
-        bodyAvatar.src = `img/character/body/body_fair.png`;
-        headAvatar.src = `img/character/head/head_fair.png`;
+        bodyAvatar.src = `../img/character/body/body_fair.png`;
+        headAvatar.src = `../img/character/head/head_fair.png`;
     }
 
     if (topStorage != null) {
         changeTop(topStorage);
     } else {
-        topAvatar.src = `img/character/clothes/tops/top_1.png`;
+        topAvatar.src = `../img/character/clothes/tops/top_1.png`;
     }
 
     if (bottom != null) {
         changeBottom(bottom);
     } else {
-        bottomAvatar.src = `img/character/clothes/bottoms/bottom_1.png`;
+        bottomAvatar.src = `../img/character/clothes/bottoms/bottom_1.png`;
     }
 
     if (shoe != null) {
         changeShoe(shoe);
     } else {
-        shoesAvatar.src = `img/character/clothes/shoes/shoe_1.png`;
+        shoesAvatar.src = `../img/character/clothes/shoes/shoe_1.png`;
     }
 
     if (hat != null) {
         changeHat(hat);
     } else {
-        hatAvatar.src = "img/empty.png";
+        hatAvatar.src = "../img/empty.png";
     }
 
     if (nose != null) {
         changeNose(nose);
     } else {
-        noseAvatar.src = `img/character/noses/nose_1.png`;
+        noseAvatar.src = `../img/character/noses/nose_1.png`;
     }
 
     if (mouth != null) {
         changeMouth(mouth);
     } else {
-        mouthAvatar.src = `img/character/mouth/mouth_1.png`;
+        mouthAvatar.src = `../img/character/mouth/mouth_1.png`;
     }
 
     if (eyes != null) {
         changeEyes(eyes);
     } else {
-        eyesAvatar.src = `img/character/eyes/eyes_1.png`;
+        eyesAvatar.src = `../img/character/eyes/eyes_1.png`;
     }
 
     if (hairBack == null) {
-        hairBackAvatar.src = `img/character/hair/back/hair_back_1.png`;
-        hairFrontAvatar.src = `img/character/hair/front/hair_front_1.png`;
+        hairBackAvatar.src = `../img/character/hair/back/hair_back_1.png`;
+        hairFrontAvatar.src = `../img/character/hair/front/hair_front_1.png`;
     } else {
         changeHair(hairBack);
     }
 }
 
 function changeBody(color) {
-    bodyAvatar.src = `img/character/body/body_${color}.png`;
-    headAvatar.src = `img/character/head/head_${color}.png`;
+    bodyAvatar.src = `../img/character/body/body_${color}.png`;
+    headAvatar.src = `../img/character/head/head_${color}.png`;
     localStorage.setItem("skincolor", color);
 }
 
@@ -95,21 +95,21 @@ function toggleTabsCloset(tabName) {
             maxEyes = 4;
             featuresContainer.innerHTML = ``
             for (let i = 1; i <= maxEyes; i++) {
-                featuresContainer.innerHTML += `<img class="clothesButtonPreview" src="img/character/eyes/eyes_${i}.png" onclick="changeEyes('${i}')">`;
+                featuresContainer.innerHTML += `<img class="clothesButtonPreview" src="../img/character/eyes/eyes_${i}.png" onclick="changeEyes('${i}')">`;
             }
             break;
         case "mouth":
             maxMouths = 4;
             featuresContainer.innerHTML = ``
             for (let i = 1; i <= maxMouths; i++) {
-                featuresContainer.innerHTML += `<img class="clothesButtonPreview" src="img/character/mouth/mouth_${i}.png" onclick="changeMouth('${i}')">`;
+                featuresContainer.innerHTML += `<img class="clothesButtonPreview" src="../img/character/mouth/mouth_${i}.png" onclick="changeMouth('${i}')">`;
             }
             break;
         case "nose":
             maxNoses = 4;
             featuresContainer.innerHTML = ``
             for (let i = 1; i <= maxNoses; i++) {
-                featuresContainer.innerHTML += `<img class="clothesButtonPreview" src="img/character/noses/nose_${i}.png" onclick="changeNose('${i}')">`;
+                featuresContainer.innerHTML += `<img class="clothesButtonPreview" src="../img/character/noses/nose_${i}.png" onclick="changeNose('${i}')">`;
             }
             break;
         case "hair":
@@ -117,27 +117,29 @@ function toggleTabsCloset(tabName) {
             featuresContainer.innerHTML = ``
             featuresContainer.innerHTML += `<img class="hairButtonPreview" onclick="changeClear('hair')">`;
             for (let i = 1; i <= maxHair; i++) {
-                featuresContainer.innerHTML += `<div class="hairButtonPreview" onclick="changeHair('${i}')"><img src="img/character/hair/back/hair_back_${i}.png"><img src="img/character/hair/front/hair_front_${i}.png"></div>`;
+                featuresContainer.innerHTML += `<div class="hairButtonPreview" onclick="changeHair('${i}')"><img src="../img/character/hair/back/hair_back_${i}.png"><img src="../img/character/hair/front/hair_front_${i}.png"></div>`;
+                
             }
+            break;
         case "tops":
             maxTops = 2;
             clothesContainer.innerHTML = ``
             for (let i = 1; i <= maxTops; i++) {
-                clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="img/character/clothes/tops/top_${i}.png" onclick="changeTop('${i}')">`;
+                clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="../img/character/clothes/tops/top_${i}.png" onclick="changeTop('${i}')">`;
             }
             break;
         case "bottoms":
             maxBottoms = 2;
             clothesContainer.innerHTML = ``
             for (let i = 1; i <= maxBottoms; i++) {
-                clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="img/character/clothes/bottoms/bottom_${i}.png" onclick="changeBottom('${i}')">`;
+                clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="../img/character/clothes/bottoms/bottom_${i}.png" onclick="changeBottom('${i}')">`;
             }
             break;
         case "shoes":
             maxShoes = 2;
             clothesContainer.innerHTML = ``
             for (let i = 1; i <= maxShoes; i++) {
-                clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="img/character/clothes/shoes/shoe_${i}.png" onclick="changeShoe('${i}')">`;
+                clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="../img/character/clothes/shoes/shoe_${i}.png" onclick="changeShoe('${i}')">`;
             }
             break;
         case "hats":
@@ -146,7 +148,7 @@ function toggleTabsCloset(tabName) {
             clothesContainer.innerHTML += `<img class="clothesButtonPreview" onclick="changeClear('hat')">`;
 
             for (let i = 1; i <= maxHats; i++) {
-                clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="img/character/clothes/hats/hat_${i}.png" onclick="changeHat('${i}')">`;
+                clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="../img/character/clothes/hats/hat_${i}.png" onclick="changeHat('${i}')">`;
             }
             break;
             break;
@@ -154,38 +156,38 @@ function toggleTabsCloset(tabName) {
 }
 
 function changeMouth(number) {
-    mouthAvatar.src = `img/character/mouth/mouth_${number}.png`;
+    mouthAvatar.src = `../img/character/mouth/mouth_${number}.png`;
     localStorage.setItem("mouth", number);
 }
 
 function changeNose(number) {
-    noseAvatar.src = `img/character/noses/nose_${number}.png`;
+    noseAvatar.src = `../img/character/noses/nose_${number}.png`;
     localStorage.setItem("nose", number);
 }
 
 function changeEyes(number) {
-    eyesAvatar.src = `img/character/eyes/eyes_${number}.png`;
+    eyesAvatar.src = `../img/character/eyes/eyes_${number}.png`;
     localStorage.setItem("eyes", number);
 }
 
 function changeTop(number) {
-    topAvatar.src = `img/character/clothes/tops/top_${number}.png`;
+    topAvatar.src = `../img/character/clothes/tops/top_${number}.png`;
     localStorage.setItem("topStorage", number);
 
 }
 
 function changeBottom(number) {
-    bottomAvatar.src = `img/character/clothes/bottoms/bottom_${number}.png`;
+    bottomAvatar.src = `../img/character/clothes/bottoms/bottom_${number}.png`;
     localStorage.setItem("bottom", number);
 }
 
 function changeShoe(number) {
-    shoesAvatar.src = `img/character/clothes/shoes/shoe_${number}.png`;
+    shoesAvatar.src = `../img/character/clothes/shoes/shoe_${number}.png`;
     localStorage.setItem("shoe", number);
 }
 
 function changeHat(number) {
-    hatAvatar.src = `img/character/clothes/hats/hat_${number}.png`;
+    hatAvatar.src = `../img/character/clothes/hats/hat_${number}.png`;
     localStorage.setItem("hat", number);
 }
 
@@ -193,8 +195,8 @@ function changeHair(number) {
     if (number == "0") {
         changeClear("hair");
     } else {
-        hairBackAvatar.src = `img/character/hair/back/hair_back_${number}.png`;
-        hairFrontAvatar.src = `img/character/hair/front/hair_front_${number}.png`;
+        hairBackAvatar.src = `../img/character/hair/back/hair_back_${number}.png`;
+        hairFrontAvatar.src = `../img/character/hair/front/hair_front_${number}.png`;
 
         localStorage.setItem("hairBack", number);
         localStorage.setItem("hairFront", number);
@@ -205,13 +207,13 @@ function changeHair(number) {
 function changeClear(name) {
     switch (name) {
         case "hair":
-            hairBackAvatar.src = "img/empty.png";
-            hairFrontAvatar.src = "img/empty.png";
+            hairBackAvatar.src = "../img/empty.png";
+            hairFrontAvatar.src = "../img/empty.png";
             localStorage.setItem("hairBack", "0");
             localStorage.setItem("hairFront", "0");
             break;
         case "hat":
-            hatAvatar.src = "img/empty.png";
+            hatAvatar.src = "../img/empty.png";
             localStorage.removeItem("hat");
             break;
     }

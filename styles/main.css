@@ -35,13 +35,13 @@ a:hover {
 
 button,
 input[type=button] {
-border: 2px solid black;
+    border: 2px solid black;
     font-weight: bold;
     border-radius: 4px;
     background-color: var(--yellow);
     color: black;
     padding: 0.5em;
-    box-shadow:3px 3px black;
+    box-shadow: 3px 3px black;
     cursor: pointer;
 }
 
@@ -148,9 +148,7 @@ footer {
 }
 
 
-.darkAlleyTrigger {
-    cursor: default;
-}
+
 
 .dateMessage {
     color: var(--grey);
@@ -188,7 +186,7 @@ footer {
 
 
 .white {
-    background-color: white  !important;
+    background-color: white !important;
 }
 
 .fair {
@@ -234,6 +232,68 @@ footer {
     width: 64px;
     left: 0;
     position: absolute;
+}
+
+#cityMapContainer {
+    position: relative;
+    display: inline-block;
+    width: 512px;
+    height: 512px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#cityMapContainer img {
+    position: absolute;
+        width: 512px;
+    height: 512px;
+    left: 0;
+    top: 0;
+}
+
+#cityMapContainer a {
+    position: absolute;
+    z-index: 9999;
+}
+
+#darkAlleyLink {
+    cursor: default;
+    right: 21%;
+    top: 7%;
+    height: 20px;
+    width: 8px;
+}
+
+#darkAlleyLink {
+    cursor: default;
+    right: 21%;
+    top: 7%;
+    height: 20px;
+    width: 8px;
+}
+
+#cinemaLink {
+    cursor: pointer;
+    right: 20%;
+    top: 24%;
+    height: 128px;
+    width: 128px;
+}
+
+.cinemaImage {
+    width: 251px !important;
+    height: 220px !important;
+    top: 70px !important;
+    left: 240px !important;
+}
+
+.whiteBorderImages {
+    display: none;
+        filter: blur(5px);
+}
+
+.whiteBorderImages:hover {
+    display: block;
 }
 
 @media (max-width: 600px) {

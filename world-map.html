@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CozyTown - Explore</title>
-    <link rel="stylesheet" href="styles/main.css"/>
-    <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icons/favicon.ico">
 </head>
 
 <body>
@@ -14,9 +14,18 @@
 
     <div id="mainCointainer">
         <h1>World map</h1>
-        <a href="bowling.html">Bowling</a>
-        <a href="cinema.html">Cinema</a>
-        <a href="dark-alley.html" class="darkAlleyTrigger">Dark alley</a>
+
+        <div id="cityMapContainer">
+            <img src="../img/environments/city_base.png" >
+            <img src="../img/environments/city_cinema_white.png" class="whiteBorderImages cinemaImage">
+            <img src="../img/environments/city_cinema.png" class="cinemaImage">
+            <a href="../world/bowling.html" id="bowlingLink"></a>
+            <a href="../world/cinema.html" id="cinemaLink"></a>
+            <a href="../world/dark-alley.html" id="darkAlleyLink"></a>
+        </div>
+
+
+
 
         <!-- para el brillo en hover del mapa poner dentro de un div y en hover background image una imqagen con el borde blanco?
         hacer un fondo con espacio para edificios y ir agregando
@@ -24,8 +33,8 @@
     </div>
 
     <footer></footer>
-    <script src="script/navbar.js"></script>
-    <script src="script/toggle-mode.js"></script>
+    <script src="../script/navbar.js"></script>
+    <script src="../script/toggle_mode.js"></script>
 </body>
 
 </html>
