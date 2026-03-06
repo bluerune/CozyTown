@@ -119,6 +119,7 @@ function toggleTabsCloset(tabName) {
             for (let i = 1; i <= maxHair; i++) {
                 featuresContainer.innerHTML += `<div class="hairButtonPreview" onclick="changeHair('${i}')"><img src="img/character/hair/back/hair_back_${i}.png"><img src="img/character/hair/front/hair_front_${i}.png"></div>`;
             }
+            break;
         case "tops":
             maxTops = 2;
             clothesContainer.innerHTML = ``
@@ -149,7 +150,7 @@ function toggleTabsCloset(tabName) {
                 clothesContainer.innerHTML += `<img class="clothesButtonPreview" src="img/character/clothes/hats/hat_${i}.png" onclick="changeHat('${i}')">`;
             }
             break;
-            break;
+
     }
 }
 

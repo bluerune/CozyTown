@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CozyTown - User Profile</title>
-    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
 </head>
 
-<body>
+<body onload="loadUserData()">
     <div id="navbar"></div>
     <div id="mainCointainer">
+        <div id="userpageMainContainer">
+            <div id="pictureProfilePageContainer"></div>
+            <div id="usernameProfilePage">Username</div>
+            <div id="descriptionProfilePage">Description</div>
+            <div id="petProfilePage">pet</div>
+        </div>
 
-        <div id="profilepictureContainer"><img src="" class="profilepictureuserpage" alt=""></div>
-        <div id="username">Username</div>
-        <div id="description">Description</div>
-        <div id="pet">Pet </div>
     </div>
     <footer></footer>
     <script src="script/navbar.js"></script>

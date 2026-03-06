@@ -91,19 +91,6 @@ footer {
     display: inline-block;
 }
 
-.profilepicture {
-    width: 64px;
-    height: 64px;
-    background-color: white;
-    border: 5px solid black;
-}
-
-.profilepictureuserpage {
-    width: 240px;
-    height: 240px;
-    background-color: white;
-    border: 5px solid black;
-}
 
 .profilepictureNavbar {
     width: 64px;
@@ -158,7 +145,7 @@ footer {
         "empty date";
     grid-template-columns: 1fr 3fr;
     gap: 6px;
-        text-align: center;
+    text-align: center;
     align-items: center;
     justify-content: center;
     padding: 5px;
@@ -171,9 +158,10 @@ footer {
 
 }
 
-.userProfilePictureMessage{
+.userProfilePictureMessage {
     width: 32px;
     height: 32px;
+
 }
 
 .tittleMessage {
@@ -195,6 +183,38 @@ footer {
     font-size: 12px;
 }
 
+#userpageMainContainer {
+    display: grid;
+    grid-template-areas:
+        "profilepicture username"
+        "profilepicture description"
+        "pet pet";
+    grid-template-columns: 1fr 2fr;
+    padding: 5px;
+    gap: 6px;
+}
+
+#pictureProfilePageContainer {
+    grid-area: profilepicture;
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    border: 5px solid black;
+}
+
+#usernameProfilePage {
+    grid-area: username;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#descriptionProfilePage {
+    grid-area: description;
+}
+
+#petProfilePage {
+    grid-area: pet;
+}
 
 #dressupContainer {
     height: 320px;
