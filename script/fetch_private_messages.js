@@ -12,6 +12,7 @@ function showPrivateMessages(sender) {
     .then(data => {
       for (const item of data[sender]) {
         container.innerHTML += `<div class="privateMessageContainer">
+        <img src="img/user_profile_empty.png" class="userProfilePictureMessage">
         <div class="linkUsername" onclick="directUserProfile('${item.from}')">${item.from}:</div>
         <p class="userMessage">${item.message}</p>
         <p class="dateMessage">${item.date}</p>

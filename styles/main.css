@@ -73,8 +73,34 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
     font-size: 9px;
+}
+
+footer div {
+    max-width: 800px;
+    display: grid;
+    grid-template-areas:
+        "thanks nightmode"
+        "links logo";
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+
+    padding: 5px;
+}
+
+.thanksFooter {
+    grid-area: thanks;
+}
+
+.linksFooter {
+    grid-area: links;
+}
+
+footer button {
+    grid-area: nightmode;
+}
+footer img {
+    grid-area: logo;
 }
 
 .cozytownLogoFooter {
@@ -93,11 +119,7 @@ footer {
 
 
 .profilepictureNavbar {
-    width: 64px;
-    height: 64px;
-    background-color: white;
-    border: 5px solid black;
-    margin-right: 0.2em;
+    margin-right: 0.5em;
 }
 
 .forummessageContainer {
@@ -158,10 +180,15 @@ footer {
 
 }
 
-.userProfilePictureMessage {
+.userProfilePictureMessage, .profilepictureNavbar {
+        grid-area: username;
     width: 32px;
     height: 32px;
+    border: 2px solid black;
+}
 
+.userProfilePictureMessage {
+        grid-area: username;
 }
 
 .tittleMessage {
@@ -355,6 +382,10 @@ footer {
     display: block;
 }
 
+.newsIndexPage {
+    
+}
+
 @media (max-width: 600px) {
     .cozytownLogoNavbar {
         height: 80px;
@@ -366,11 +397,6 @@ footer {
         height: 16px;
         margin-left: 1em;
         margin-right: 0.2em;
-    }
-
-    .profilepictureNavbar {
-        width: 32px;
-        height: 32px;
     }
 
     #navbar {
