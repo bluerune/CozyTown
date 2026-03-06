@@ -1,5 +1,5 @@
 userProfileList = [{ "username": "jo_star", "description": "Hi! I'm a conceited bitch who's always trying to humiliate others to get attention. My passions are seducing idiots into giving me premium items and crushing my competition in online fashion shows, because I'd never win a single award in real life" },
-    { "username": "fairylady_003", "description": "" }
+{ "username": "fairylady_003", "description": "" }
 ];
 
 pictureProfilePageContainer = document.getElementById("pictureProfilePageContainer");
@@ -15,17 +15,21 @@ function directUserProfile(username) {
 function loadUserData() {
     username = localStorage.getItem("usernameProfilePage");
     indexUsername = userProfileList.indexOf("username" === username);
-    usernameProfilePage.innerHTML = `<p>${username}</p>`
+    usernameProfilePage.innerHTML = `${username}`
 
-    switch (username){
+    switch (username) {
         case "joe_star":
+            usernameProfilePage.innerHTML += `<div class="onlineDot"></div>`
             descriptionProfilePage.innerHTML = `<p>Hi! I'm a conceited bitch who's always trying to humiliate others to get attention. My passions are seducing idiots into giving me premium items and crushing my competition in online fashion shows, because I'd never win a single award in real life</p>`;
-        break;
+            break;
+        case "Me":
+            window.location.href = "./my-profile.html";
+            break;
         default:
             descriptionProfilePage.innerHTML = `<p>No description</p>`;
             break;
     }
-    
+
 
     // console.log(indexUsername);
     // if (indexUsername > -1) {

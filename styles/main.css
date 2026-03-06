@@ -231,8 +231,16 @@ footer img {
 
 #usernameProfilePage {
     grid-area: username;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
+}
+
+.onlineDot {
+        display: inline-block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: var(--green);
 }
 
 #descriptionProfilePage {
