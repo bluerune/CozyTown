@@ -18,7 +18,7 @@ function loadUserData() {
     usernameProfilePage.innerHTML = `${username}`
 
     switch (username) {
-        case "joe_star":
+        case "jo_star":
             usernameProfilePage.innerHTML += `<div class="onlineDot"></div>`
             descriptionProfilePage.innerHTML = `<p>Hi! I'm a conceited bitch who's always trying to humiliate others to get attention. My passions are seducing idiots into giving me premium items and crushing my competition in online fashion shows, because I'd never win a single award in real life</p>`;
             break;
