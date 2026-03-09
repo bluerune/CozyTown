@@ -7,7 +7,7 @@ function showMessagesForum(dataArray) {
       container.innerHTML += `
     <div class="forumMessageContainer">
         <div class="linkUsername" onclick="directUserProfile('${item.username}')">
-        <img class="userProfilePictureMessage" src="../img/user_profile_empty.png"></img><p>${item.username}</p></div><p class="tittleMessage">
+        <img class="userProfilePictureMessage" src="img/user_profile_empty.png"></img><p>${item.username}</p></div><p class="tittleMessage">
             "${item.title}"</p>
         <p class="userMessage">${item.message}</p>
         <p class="dateMessage"> ${item.date}</p>
