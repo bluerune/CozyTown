@@ -25,6 +25,9 @@ function loadUserData() {
         case "Me":
             window.location.href = "./my-profile.html";
             break;
+            case "CozyTownRoyalty":
+                descriptionProfilePage.innerHTML = `<p></p>`;
+            break;
         default:
             descriptionProfilePage.innerHTML = `<p>No description</p>`;
             break;

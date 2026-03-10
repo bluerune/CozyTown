@@ -109,6 +109,7 @@
         {
             "from": "jo_star",
             "message": "No! Don’t you see the green dot on my profile? DUH. I’m onlineee",
+            "trigger": "cuando el jugador da click a la notificación de mensaje nuevo",
             "date": "now"
         },
         {

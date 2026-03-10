@@ -2,6 +2,7 @@ const url = "json/forum_messages.json";
 const container = document.getElementById("forumMessagesContainer");
 
 function showMessagesForum(dataArray) {
+  
   for (const item of dataArray) {
     if (item.trigger == "") {
       container.innerHTML += `
@@ -15,6 +16,8 @@ function showMessagesForum(dataArray) {
     }
 
   }
+
+  container.innerHTML += `<a href="forums.html">Back to forums list</a>`
 }
 
 function getForumName(name) {
